@@ -1,5 +1,41 @@
+@import url(normalize.css);
+
 #container {
-    background-color: rgb(190, 240, 237);
+    background-color: rgb(152, 144, 179);
     width: 980px;
     margin: 0px auto;
+}
+
+main{
+    width: 80%;
+    background-color: rgb(158, 85, 85);
+    margin: 0px auto;
+    padding: 40px 80px;
+    border:1px solid royalblue
+}
+
+h1{
+color: brown;
+width: 300px;
+margin: 40px;
+padding: 30px;
+border: 5px solid red;
+background-color: aquamarine;
+font-size: 300%;
+text-align: center;
+line-height: 1;
+}
+
+body{
+background-color: blueviolet;
+color: rgb(27, 75, 75);
+margin:0px;
+}
+
+h2{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted rgb(27, 75, 75);
+    border-left: 10px solid blueviolet;
+    color:rgb(196, 177, 152)
 }
