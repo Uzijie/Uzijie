@@ -1,0 +1,46 @@
+header {
+    /*高度*/
+    height: 200px;
+    /*背景顏色*/
+    background-color: aquamarine;
+}
+
+aside {
+    /*高度*/
+    height: 200px;
+    /*背景顏色*/
+    background-color: rgb(127, 255, 180);
+    /*版面設定靠左*/
+    float: left;
+    /*版面佔比例*/
+    width: 20%;
+}
+
+section {
+    /*高度
+    height: 200px;*/
+    /*背景顏色*/
+    background-color: rgb(127, 214, 255);
+    /*版面佔比例*/
+    width: 80%;
+    /*版面設定靠右*/
+    float: right
+}
+
+footer {
+    /*高度*/
+    height: 100px;
+    /*背景顏色*/
+    background-color: rgb(217, 255, 127);
+    /*除錯用:解除文繞圖*/
+    clear: both;
+}
+
+.post{
+    /*文字至中*/
+    text-align: center;
+    /*間隔*/
+    padding: 10px;
+    /*左右並排*/
+    float:left
+}
