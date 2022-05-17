@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap');
+
+/*導覽列樣式設定*/
+body,ul{
+    /*邊框距離設為0(不然會有白色的縫隙)*/
+    margin: 0px;
+}
+
+header{
+    /*將標題固定在上方*/
+    position: sticky;
+    /*增加相容性使微軟瀏覽器可使用*/
+    position: -webkit-sticky;
+    /*最上方*/
+    top:0;
+}
+
+
+nav{
+    /*背景顏色*/
+    background-color: rgb(7, 167, 167);
+}
+nav ul{
+    /*設定屬性*/
+    display: flex;
+    /*靠右邊*/
+    justify-content: right;
+    /*邊框距離設為0*/
+    margin: 0px;
+}
+nav li{
+    /*將前面的黑點移除*/
+    list-style-type: none;
+    /*上下左右間隔10px*/
+    padding:10px
+}
+
+nav a{
+    /*將文字底線移除*/
+    text-decoration: none;
+    /*設定文字顏色*/
+    color: white;
+    /*放大選項範圍(不然會只有文字有效果)*/
+    padding: 10px;
+}
+nav a:hover{
+    /*鼠標移上去改背景顏色*/
+    background-color: beige;
+    /*鼠標移上去改文字顏色*/
+    color:black;
+    /*鼠標移上去時漸變效果
+    使用方法:    改變部分         1秒 所需效果,...下一個設定 */
+    transition: background-color 1s linear,color 1s ease-in;
+}
+/*標題列樣式設定*/
+.banner{
+    /*設定樣式*/
+    display: flex;
+    /*水平對齊方式(平均分配在左右邊界)*/
+    justify-content: space-around;
+    /*垂直對齊方式(至中對齊)*/
+    align-items: center;
+    /*背景顏色(有透明效果) rgb+a=讓他透明  透明度X%*/
+    background-color: rgba(255, 192, 203,80%) ;
+}
+
+.title{
+    /*文字至中*/
+    text-align: center;
+    /*使用網路上的字形*/
+    font-family: 'Zen Loop', cursive;
+}
+
+/*相片清單樣式設定*/
+#photolist ul{
+    display: flex;
+    /*讓他可以換行*/
+    flex-wrap: wrap;
+    /*圖片排列方式至中*/
+    justify-content: center;
+    /*設定邊界為0*/
+    padding: 0px;
+}
+#photolist li{
+    /*移除項目符號(前面的黑點)*/
+    list-style-type:none ;
+    /*間隔10px*/
+    margin: 10px;
+}
+
+#photolist img{
+    /*讓他有圓角*/
+    border-radius: 10%;
+    /*圖片陰影 水平 垂直 渲染程度(模糊化) 顏色*/
+    box-shadow: 5px 5px   10px       grey;
+}
+#photolist .emptyitem{
+    /*每個空的清單項目佔一格*/
+    width: 200px;
+}
+/*gotop回到最上方的按鈕*/
+.gotop{
+    /*圖片大小*/
+    font-size: 60px;
+    /*顏色*/
+    color: aquamarine;
+    /*固定在畫面*/
+    position: fixed;
+    /*右邊距離*/
+    right: 25px;
+    /*下面距離*/
+    bottom: 25px;
+}
