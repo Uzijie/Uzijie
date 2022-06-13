@@ -1,0 +1,28 @@
+.food-container{
+    margin-top: 20px;
+}
+
+.news_title{
+    color: #fff;
+    font-size: 1vw;
+}
+
+
+.news_date{
+    color: #fff;
+}
+
+.news_summary{
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 300px;
+}
+
+.img-content{
+    transform: translate(-50%,-35%);
+
+}
